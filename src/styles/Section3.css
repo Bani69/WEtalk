@@ -1,0 +1,508 @@
+
+:root {
+
+    --navbar-bg: 23,23,23;
+    --bg-color: #171717;
+    --text-color: #f5f5f5;
+    --accent: #00e673;
+    --bg-color-2: #292929;
+    --bg-color-3: #292929;
+    --bg-color-4: #1f1f1f;
+    --bg-color-5: rgba(0,51,26,0.726);
+    --bg-color-6: #e0e0e0;
+    --bg-color-7: rgba(0,51,26,.032);
+}
+
+::-webkit-scrollbar {
+    width:3px; /* Set the width of the scrollbar */
+
+}
+
+::-webkit-scrollbar-thumb {
+background-color: var(--accent);
+    border-radius: 20px;
+    opacity: 0.3;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--accent);/* Set the color of the thumb when hovering */
+}
+
+.Section3{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    overflow: hidden;
+}
+.Section3 .con{
+    background: var(--bg-color-4);
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ padding: 1rem;
+
+}
+
+
+.Section3 .con .inputsend{
+padding: 1rem;
+ display: flex;
+    gap: 1rem;
+
+}
+
+.Section3 .con header{
+    padding: 1rem 1rem;
+    display: flex;
+    gap: 1rem;
+
+}
+.Section3 .con .inputsend button{
+    background: var(--accent);
+
+    border: none;
+    position: relative;
+padding: 0.8rem;
+    border-radius: 50%;
+}
+.Section3 .con .inputsend .likebtn{
+    background: none;
+
+    border: none;
+    position: relative;
+    padding: 0.8rem;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+
+}
+
+
+
+
+
+
+
+
+.Section3 .con .inputsend button img{
+   width: 24px;
+    height: 23px;
+
+}.Section3 .con .inputsend input{
+    width: 100%;
+     background: var(--bg-color-5);
+
+     border: none;
+     outline: none;
+     z-index: 1111;
+     padding: 1rem ;
+     border-radius: 0.7rem;
+     color: var(--text-color);
+     font-family: Consolas;
+
+ }
+ .main{
+display: flex;
+     flex-direction:column ;
+background: var(--bg-color-5);
+   height: 100%;
+     border-radius: 2rem;
+     padding: 2rem;
+     overflow-y: scroll;
+     position: relative;
+ }
+.Section3 .con header {
+   display: flex;
+    place-items: center;
+
+}
+
+.Section3 .con .inputsend .sentbtn::before {
+    content: "";
+    position: absolute;
+    top: -2%;
+    left: -2%;
+
+    border: 1px solid var(--accent);
+    height: 106%;
+    width: 106%;
+    border-radius: 50%;
+    color: #fff;
+    transform: rotate(-3.0deg);
+
+    -webkit-box-shadow: 0 8px 15px  var(--bg-color-5);
+    box-shadow: 0 8px 15px  var(--bg-color-5);
+
+}
+
+
+.Section3 .con header p {
+    color: var(--text-color);
+
+    font-family: Kanit;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 120%;
+    letter-spacing: 1px;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, .1);
+    position: relative;
+    opacity: 0.6;
+
+}
+
+
+
+.Section3 .con header img{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+position: relative;
+
+}
+.Section3 .con header img::after {
+    content: "";
+    position: absolute;
+    top: -2%;
+    left: -2%;
+
+    border: 1px solid var(--accent);
+    height: 106%;
+    width: 106%;
+    border-radius: 50%;
+    color: #fff;
+    transform: rotate(-3.0deg);
+
+    -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+
+}
+.main .mssg {
+    display: flex;
+    justify-content: right;
+
+    padding: 0.3rem;
+gap: 5px;
+    place-items: end;
+    position: relative;
+}
+
+.main .mssg .actionbtn {
+display: flex;
+    justify-content:end;
+    height: 100%;
+
+    place-items:center;
+    opacity: 0;
+}
+.main .mssg .actionbtn button{
+     background: transparent;
+    border: none;
+     height: 100%;
+
+}
+
+.main .mssg1 .actionbtn {
+    display: flex;
+    justify-content:center;
+    height: 100%;
+    padding: 0.5rem;
+    place-items: center;
+    opacity: 0;
+}
+
+.main .mssg1 .actionbtn button{
+    background: transparent;
+    border: none;
+    color: white;
+
+}
+.main .mssg img{
+    width: 30px;
+    height: 30px;
+
+ border-radius: 2rem;
+}
+.main .mssg .actionbtn button img,.main .mssg1 .actionbtn button img{
+    filter: invert(100);
+    opacity: 0.7;
+
+    transform: translateY(0.3rem);
+}
+.main .mssg1 {
+    display: flex;
+ justify-content: left;
+    gap: 0.5rem;
+
+    padding: 0.4rem;
+    place-items: end;
+    position: relative;
+    flex-direction: row-reverse;
+}
+.main .mssg1 img{
+    width: 30px;
+    height: 30px;
+
+
+}
+.main .mssg .text{
+    background: var(--bg-color-4);
+    border-radius: 2rem 2rem 0rem 2rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+
+    max-width: 100%;
+
+
+}
+
+
+
+.main .mssg1 .text{
+    background: var(--accent);
+    background: rgba(0,230,115,0.6);
+    border-radius: 2rem 2rem 2rem 0rem;
+    padding: 0.4rem 1rem;
+    position: relative;
+    -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    max-width: 100%;
+
+
+}
+.main .mssg .text::before{
+    content: attr(data-name);
+    position: absolute;
+   opacity: 0;
+
+z-index: 1111;
+
+    color: var(--text-color);
+
+    font-family: Kanit;
+    font-weight: 300;
+    font-size: 10px;
+    top: -1rem;
+    line-height: 120%;
+
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, .1);
+
+
+
+
+}
+.main .mssg .text:hover::before{
+    content: attr(data-name);
+    position: absolute;
+opacity: 1;
+
+
+}
+.main .mssg1:hover  .actionbtn{
+    opacity: 1;
+}
+.main .mssg:hover  .actionbtn{
+    opacity: 1;
+}
+
+
+
+
+.main .mssg1 .text::before{
+    content: attr(data-name);
+    position: absolute;
+    opacity: 0;
+
+    z-index: 1111;
+
+    color: var(--text-color);
+right: 20px;
+    font-family: Kanit;
+    font-weight: 300;
+    font-size: 10px;
+    top: -1rem;
+    line-height: 120%;
+
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, .1);
+
+
+
+
+}
+
+
+
+.main .mssg1 .text:hover::before{
+    content: attr(data-name);
+    position: absolute;
+    opacity: 1;
+
+
+}
+
+.main .mssg1 img{
+    width: 30px;
+    height: 30px;
+    border-radius: 1rem;
+
+}
+.main .mssg p{
+    color: var(--text-color);
+
+    font-family: Kanit;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 1px;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, .1);
+    position: relative;
+    line-break: anywhere;
+        padding: 0.51rem;
+}
+.main .mssg1 p{
+    color: var(--text-color);
+
+    font-family: Kanit;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 1px;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, .1);
+    position: relative;
+    line-break: anywhere;
+    padding: 0.51rem;
+}
+.main .mssg  span{
+
+opacity: 0;
+    font-family: Kanit;
+    font-weight: 300;
+    font-size: 10px;
+    color: var(--text-color);
+    line-height: 120%;
+    letter-spacing: 1px;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, .1);
+  padding: 0.5rem;
+  transition: ease-in 0.3s;
+
+
+
+}
+.main .mssg .cons:hover span{
+    opacity: 1;
+
+    font-family: Kanit;
+    font-weight: 300;
+    font-size: 10px;
+    color: var(--text-color);
+    line-height: 120%;
+    letter-spacing: 1px;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, .1);
+    padding: 0.5rem;
+
+}
+.main .mssg1 .cons:hover span{
+    opacity: 1;
+
+    font-family: Kanit;
+    font-weight: 300;
+    font-size: 10px;
+    color: var(--text-color);
+    line-height: 120%;
+    letter-spacing: 1px;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, .1);
+    padding: 0.5rem;
+
+}
+
+
+
+.main .mssg .cons{
+display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: end;
+ transform: translateY(1rem);
+}
+.main .mssg1 .cons{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: end;
+    transform: translateY(1rem);
+}
+.main .mssg1  span{
+  transition: ease-in 0.3s;
+   font-family: Kanit;
+    font-weight: 300;
+    line-height: 120%;
+    letter-spacing: 1px;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, .1);
+    color: var(--text-color);
+    font-size: 10px;
+    padding: 0.5rem;
+    opacity: 0;
+}
+
+.main .mssg .textnobg{
+
+
+border-radius: 0;
+
+padding: 0;
+
+}
+
+
+.ifnoroomid{
+ color: white;
+    font-family: Kanit;
+    line-height: 120%;
+    letter-spacing: 1px;
+    display: flex;
+    width: 100%;
+gap: 10px;
+    justify-content: center;
+    place-items: center;
+    height: 100%;
+    flex-direction: column;
+   opacity: 0.7;
+}
+.ifnoroomid h1{
+    font-weight:500;
+    font-size: 2rem;
+}
+.ifnoroomid:nth-child(1) div{
+
+    display: flex;
+    width: 30%;
+gap: 10px;
+    height: 30px;
+    place-items: center;
+}
+.ifnoroomid:nth-child(1) div img{
+    width: 20px;
+    height: 20px;
+  filter: invert(100);
+}
+.date{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+
+    font-family: Kanit;
+    font-weight: 300;
+    line-height: 120%;
+    letter-spacing: 1px;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, .1);
+    color: var(--text-color);
+    font-size: 12px;
+    padding: 0.5rem;
+
+}
